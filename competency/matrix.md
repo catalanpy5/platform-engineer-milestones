@@ -1,10 +1,8 @@
 <!-- Sanitized — 고객사명·시크릿·내부 식별자 제거. 일반화한 부분은 "(일반화함)"으로 표기. 미확정 수치는 TODO. -->
 
-# Competency Matrix — 넓이로 보는 역량 지도
+# Competency Matrix — 역량 지도
 
-> [case-studies/](../case-studies/)의 flagship 5개가 **깊이**라면, 이 문서는 **넓이**입니다.
-> Platform Engineer를 척추로, 그 위에서 동작하는 데이터·백엔드·성능 레이어까지 직접 다룬 범위를 한 장에 정리합니다.
-> 각 역량은 **심층 케이스 링크** 또는 **정량 미니사례**로 증거를 답니다.
+> 각 역량은 **심층 케이스 링크** 또는 **정량 미니사례**로 증거 링크.
 
 ---
 
@@ -18,10 +16,10 @@
 | **관측 / SRE** | Prometheus·Alertmanager, 자동대응(webhook), EFK, BMC/IPMI·UPS, graceful shutdown | [#03 관측·자동대응](../case-studies/03-observability-autoremediation.md) |
 | **CI/CD / DevSecOps** | GitLab CI/CD, 이미지 취약점 스캔 게이트, base 재빌드, Nexus 의존성 일원화, 이슈-배포 연계 | [#04 안전한 CI/CD](../case-studies/04-secure-cicd-delivery-platform.md) |
 | **IaC** | Terraform(프로비저닝·상태관리·재현성) | [#05 클라우드 이관](../case-studies/05-cloud-migration-cost-optimization.md) |
-| **데이터 스토어 / 튜닝** | Elasticsearch 샤딩·캐싱, MySQL explain 튜닝·GTID replication, MongoDB, Redis, qdrant | §2 정량 미니사례 |
-| **HPC / 성능** | 병목 진단(profiler) → 기술 선택 → 분산(CUDA cublasXt 멀티 GPU / Ray) | §2 정량 미니사례 · [#05](../case-studies/05-cloud-migration-cost-optimization.md) |
-| **백엔드 (보조 증거)** | Node.js cluster/stream 성능, Express→NestJS 고도화, gRPC middleware | §3 |
-| **프론트엔드 (보조 증거)** | React class→hook 전환 | §3 |
+| **데이터 스토어 / 튜닝** | Elasticsearch 샤딩·캐싱, MySQL explain 튜닝·GTID replication, MongoDB, redis-edge , qdrant | [#2 정량 미니사례](#2-정량-미니사례-quantified-mini-cases) |
+| **HPC / 성능** | 병목 진단(profiler) → 기술 선택 → 분산(CUDA cublasXt 멀티 GPU / Ray) | [#2 정량 미니사례](#2-정량-미니사례-quantified-mini-cases) · [#05](../case-studies/05-cloud-migration-cost-optimization.md) |
+| **백엔드 (보조 증거)** | Node.js cluster/stream 성능, Express→NestJS 고도화, gRPC middleware | [#3 그 외 보조 역량](#3-그-외-보조-역량) |
+| **프론트엔드 (보조 증거)** | MuiTheme 기반의 공통 component들(Input,Table,Tree,FileAttatchDialog) 개발 , React class component → hook 전환 | [#3 그 외 보조 역량](#3-그-외-보조-역량) |
 
 ---
 
@@ -43,20 +41,17 @@
 
 ### (c) CUDA / HPC — 병목 "진단·기술선택"으로서의 GPU 분산
 
-> ⚠️ **핵심은 모듈 코드가 아니라 의사결정**입니다. CUDA 개발자가 아니라, 워크로드 병목을 진단하고 HPC 전략을 선택·조율하는 관점.
-
 - **진단**: Python profiler로 대형 **행렬곱이 병목**임을 특정 → CPU 단일 처리로는 한계 판단.
 - **조치**: **cublasXt 기반 멀티 GPU 분산**으로 기술 선택(행렬을 GPU들에 타일 분할).
 - **결과**: 처리 가능한 행렬 차원 **약 3,000² → 100,000² (차원 기준 약 30배↑)**.
 
 ---
 
-## 3. 그 외 보조 역량 (넓이)
+## 3. 그 외 보조 역량
 
 - **Node.js**: cluster/stream으로 처리량·메모리 개선
 - **NestJS**: Express 앱을 NestJS 구조로 고도화(모듈·DI·테스트 용이성)
 - **MySQL 가용성**: GTID 기반 replication 구성
+- **redis-edge**: 10GB 정도의 large json caching 을 달성
 - **데이터 미들웨어**: MongoDB, qdrant 연동 gRPC middleware
-- **Frontend**: React class component → hook 전환
-
-> 보조 역량은 "플랫폼을 만드는 사람이 애플리케이션·데이터 레이어까지 이해한다"는 증거로 배치합니다 — 헤드라인이 아니라 폭의 근거.
+- **Frontend**: MuiTheme 기반의 공통 component들(Input,Table,Tree,FileAttatchDialog) 개발 , React class component → hook 전환
