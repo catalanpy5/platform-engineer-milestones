@@ -27,8 +27,8 @@
 │   └── <a href="https://github.com/catalanpy5/platform-engineer-milestones/blob/master/competency/matrix.md">matrix.md</a>                # 역량 매트릭스 + 정량 미니사례
 │
 ├── <a href="https://github.com/catalanpy5/platform-engineer-milestones/tree/master/architecture">architecture/</a>                # 대표 시스템 다이어그램 (draw.io)
-│   ├── <a href="https://github.com/catalanpy5/platform-engineer-milestones/blob/master/architecture/gke-istio-4.svg">gke-istio-4.svg</a>          # #02 GKE 마이크로서비스 + Istio 카나리
-│   └── <a href="https://github.com/catalanpy5/platform-engineer-milestones/blob/master/architecture/gke-kuberay-keda-1.svg">gke-kuberay-keda-1.svg</a>   # #05 GKE + KubeRay 분산 + KEDA
+│   ├── <a href="https://github.com/catalanpy5/platform-engineer-milestones/blob/master/architecture/gke-istio-4.drawio.svg">gke-istio-4.svg</a>          # #02 GKE 마이크로서비스 + Istio 카나리
+│   └── <a href="https://github.com/catalanpy5/platform-engineer-milestones/blob/master/architecture/gke-kuberay-keda-1.drawio.svg">gke-kuberay-keda-1.svg</a>   # #05 GKE + KubeRay 분산 + KEDA
 │
 └── <a href="https://github.com/catalanpy5/platform-engineer-milestones/tree/master/snippets">snippets/</a>
     └── <a href="https://github.com/catalanpy5/platform-engineer-milestones/tree/master/snippets/terraform">terraform/</a>               # 대표 IaC (모듈화 · #02·#05 GCP 리소스)
