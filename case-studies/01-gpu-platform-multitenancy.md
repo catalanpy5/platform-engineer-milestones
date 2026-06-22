@@ -7,7 +7,7 @@
 | | |
 |---|---|
 | **역할 (Role)** | GPU 플랫폼 설계·구축·운영 담당 (관리자) |
-| **기간·규모 (Scope)** | TODO: <운영 기간 / GPU 노드 수 / 연구자 수> |
+| **기간·규모 (Scope)** | 2020-2026 / GPU 노드 수 : 3 / 연구자 수 : 5> |
 | **스택 (Stack)** | Linux, NVIDIA GPU/driver, Docker(+NVIDIA Container Toolkit), Anaconda, JupyterHub/Notebook, NFS·SAMBA, RAID, ufw/firewalld, Prometheus |
 | **핵심 결과 (Impact)** | 연구자별 환경 격리 + GPU 공정 배분 + 표준화된 권한 체계로 "각자 알아서 쓰던" 워크스테이션을 운영 가능한 공용 플랫폼화 |
 

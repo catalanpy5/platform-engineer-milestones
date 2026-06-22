@@ -7,7 +7,7 @@
 | | |
 |---|---|
 | **역할 (Role)** | 아키텍처 분해 설계 + GKE 이관 + Istio 트래픽 정책 구축 담당 |
-| **기간·규모 (Scope)** | TODO: <운영 기간 / 서비스 분해 개수 / 동시 WebSocket 연결 수 / RPS> |
+| **기간·규모 (Scope)** | <2020-2026 / on-prem 에서 split 된 service 수 : 6 / 동시 WebSocket 연결 수 : 20~50> |
 | **스택 (Stack)** | GKE(Kubernetes), Istio(Envoy), WebSocket, Docker, Helm/Kustomize, GitLab CI/CD, Prometheus |
 | **핵심 결과 (Impact)** | 전체 재시작 배포 → 서비스 단위 카나리 무중단 배포. 장애 blast radius를 서비스 단위로 축소, 서비스별 독립 스케일링 확보 |
 
