@@ -1,10 +1,3 @@
----
-title: "Portfolio"
-toc: true
-toc_label: "목차"
-toc_icon: "bars"
----
-
 # Platform Engineer Portfolio
 
 > **온프레미스부터 클라우드까지, 연구·제품 워크로드를 받쳐주는 플랫폼을 설계·구축·운영합니다.**
@@ -14,6 +7,35 @@ toc_icon: "bars"
 이 포트폴리오는 **설계 의사결정 · 아키텍처 · 정량 결과**로 역량을 증명하는 문서 모음입니다.
 
 > 📧 : woojungwoo34@gmail.com 🥇 : https://www.credly.com/users/jungwoo-woo/edit/badges/credly
+
+---
+
+## 📂 저장소 구조 (Repository Map)
+
+<pre>
+.
+├── <a href="https://github.com/catalanpy5/platform-engineer-milestones/blob/master/README.md">README.md</a>                    # 포트폴리오 개요 (이 문서)
+├── <a href="https://github.com/catalanpy5/platform-engineer-milestones/blob/master/resume.md">resume.md</a>                    # 1-page 이력 요약
+│
+├── <a href="https://github.com/catalanpy5/platform-engineer-milestones/tree/master/case-studies">case-studies/</a>                # 심층 사례 (#01~#05) — 문제·제약·대안·결과
+│   ├── <a href="https://github.com/catalanpy5/platform-engineer-milestones/blob/master/case-studies/01-gpu-platform-multitenancy.md">01-gpu-platform-multitenancy.md</a>
+│   ├── <a href="https://github.com/catalanpy5/platform-engineer-milestones/blob/master/case-studies/02-monolith-to-microservices-gke-istio.md">02-monolith-to-microservices-gke-istio.md</a>
+│   ├── <a href="https://github.com/catalanpy5/platform-engineer-milestones/blob/master/case-studies/03-observability-autoremediation.md">03-observability-autoremediation.md</a>
+│   ├── <a href="https://github.com/catalanpy5/platform-engineer-milestones/blob/master/case-studies/04-secure-cicd-delivery-platform.md">04-secure-cicd-delivery-platform.md</a>
+│   └── <a href="https://github.com/catalanpy5/platform-engineer-milestones/blob/master/case-studies/05-cloud-migration-cost-optimization.md">05-cloud-migration-cost-optimization.md</a>
+│
+├── <a href="https://github.com/catalanpy5/platform-engineer-milestones/tree/master/competency">competency/</a>
+│   └── <a href="https://github.com/catalanpy5/platform-engineer-milestones/blob/master/competency/matrix.md">matrix.md</a>                # 역량 매트릭스 + 정량 미니사례
+│
+├── <a href="https://github.com/catalanpy5/platform-engineer-milestones/tree/master/architecture">architecture/</a>                # 대표 시스템 다이어그램 (draw.io)
+│   ├── <a href="https://github.com/catalanpy5/platform-engineer-milestones/blob/master/architecture/gke-istio-4.drawio">gke-istio-4.drawio</a>          # #02 GKE 마이크로서비스 + Istio 카나리
+│   └── <a href="https://github.com/catalanpy5/platform-engineer-milestones/blob/master/architecture/gke-kuberay-keda-1.drawio">gke-kuberay-keda-1.drawio</a>   # #05 GKE + KubeRay 분산 + KEDA
+│
+└── <a href="https://github.com/catalanpy5/platform-engineer-milestones/tree/master/snippets">snippets/</a>
+    └── <a href="https://github.com/catalanpy5/platform-engineer-milestones/tree/master/snippets/terraform">terraform/</a>               # 대표 IaC (모듈화 · #02·#05 GCP 리소스)
+        ├── <a href="https://github.com/catalanpy5/platform-engineer-milestones/tree/master/snippets/terraform/modules">modules/</a>             # 재사용 모듈 12개 (gke·network·cloud-run·pubsub·cloud-sql·…)
+        └── <a href="https://github.com/catalanpy5/platform-engineer-milestones/tree/master/snippets/terraform/stacks">stacks/</a>              # 환경별 조립: istio-microservices · kuberay-keda
+</pre>
 
 ---
 
@@ -80,11 +102,4 @@ toc_icon: "bars"
 
 ---
 
-## 문서 구조 (Repository Map)
-
-```
-case-studies/   # 심층 사례 (#01~#05)
-competency/     # 역량 매트릭스 + 정량 미니사례
-architecture/   # 대표 시스템 다이어그램
-snippets/       # 대표 IaC / config 발췌
-```
+> 전체 폴더 구조는 상단 **[저장소 구조](#-저장소-구조-repository-map)** 참고.
