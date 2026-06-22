@@ -1,11 +1,19 @@
+---
+title: "Portfolio"
+toc: true
+toc_label: "목차"
+toc_icon: "bars"
+---
+
 # Platform Engineer Portfolio
 
 > **온프레미스부터 클라우드까지, 연구·제품 워크로드를 받쳐주는 플랫폼을 설계·구축·운영합니다.**
-> Designing, building, and operating the platforms that carry research & product workloads — from bare metal to cloud.
 
-이 포트폴리오는 source repository 대신 **설계 의사결정 · 아키텍처 · 정량 결과**로 역량을 증명하는 문서 모음입니다.
+> ⚠️ 모든 사례는 고객사명·시크릿·내부 식별자를 제거하고 일반화했습니다.
 
-> ⚠️ 모든 사례는 고객사명·시크릿·내부 식별자를 제거하고 일반화했습니다. (Sanitized — no client names, secrets, or internal identifiers.)
+이 포트폴리오는 **설계 의사결정 · 아키텍처 · 정량 결과**로 역량을 증명하는 문서 모음입니다.
+
+> 📧 : woojungwoo34@gmail.com 🥇 : https://www.credly.com/users/jungwoo-woo/edit/badges/credly
 
 ---
 
@@ -79,6 +87,4 @@ case-studies/   # 심층 사례 (#01~#05)
 competency/     # 역량 매트릭스 + 정량 미니사례
 architecture/   # 대표 시스템 다이어그램
 snippets/       # 대표 IaC / config 발췌
-STRATEGY.md     # 이 포트폴리오의 설계 전략
-resume.md       # 이력 요약
 ```
