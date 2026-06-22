@@ -1,3 +1,10 @@
 remote_theme: "jekyll/minima@1e8a445"
 plugins:
 - jekyll-remote-theme # add this line to the plugins list if you already have one
+
+# 테마 헤더가 자동 출력하는 제목과, README 본문의 첫 H1(# Platform Engineer Portfolio)이
+# 중복 표시되는 문제 해결.
+# jekyll-titles-from-headings(Pages 기본 플러그인)가 첫 헤딩을 page.title로 승격하면서
+# 본문에도 그대로 남기는데, strip_title로 본문 헤딩만 제거한다. (repo 뷰의 README는 그대로 유지)
+titles_from_headings:
+  strip_title: true

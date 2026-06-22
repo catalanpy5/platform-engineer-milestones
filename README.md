@@ -15,7 +15,6 @@
 <pre>
 .
 ├── <a href="https://github.com/catalanpy5/platform-engineer-milestones/blob/master/README.md">README.md</a>                    # 포트폴리오 개요 (이 문서)
-├── <a href="https://github.com/catalanpy5/platform-engineer-milestones/blob/master/resume.md">resume.md</a>                    # 1-page 이력 요약
 │
 ├── <a href="https://github.com/catalanpy5/platform-engineer-milestones/tree/master/case-studies">case-studies/</a>                # 심층 사례 (#01~#05) — 문제·제약·대안·결과
 │   ├── <a href="https://github.com/catalanpy5/platform-engineer-milestones/blob/master/case-studies/01-gpu-platform-multitenancy.md">01-gpu-platform-multitenancy.md</a>
