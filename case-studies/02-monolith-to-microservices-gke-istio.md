@@ -53,7 +53,7 @@
 
 ```mermaid
 flowchart LR
-  C["클라이언트"] -->|WebSocket| M["모놀리스 단일 프로세스<br/>(실시간 + 인증 + 도메인 로직)"]
+  C["클라이언트"] -->|WebSocket| M["모놀리스 단일 프로세스<br/>(실시간 + 도메인 로직)"]
   M --> DB[("DB")]
 ```
 
@@ -65,7 +65,6 @@ flowchart TB
   GW --> VS{"VirtualService<br/>(가중치 라우팅)"}
   VS -->|"90%"| RTv1["realtime-svc v1"]
   VS -->|"10% canary"| RTv2["realtime-svc v2"]
-  GW --> AUTH["auth-svc"]
   GW --> DOM["domain-svc"]
   RTv1 --> DB[("DB")]
   RTv2 --> DB
@@ -73,7 +72,6 @@ flowchart TB
   subgraph GKE["GKE 클러스터 (Istio sidecar 주입)"]
     RTv1
     RTv2
-    AUTH
     DOM
   end
 ```
