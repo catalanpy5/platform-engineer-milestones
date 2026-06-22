@@ -1,0 +1,25 @@
+<!--
+  GitHub Pages(Jekyll)는 ```mermaid 블록을 렌더하지 않고 코드로만 출력한다.
+  Jekyll(rouge)은 그 블록을 <div class="language-mermaid"> 로 감싸므로,
+  이를 <div class="mermaid"> 로 바꿔 Mermaid.js 가 인식해 그리게 한다.
+  (GitHub.com 리포지토리 뷰는 mermaid를 자체 렌더하므로 영향 없음)
+-->
+<script type="module">
+  import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs";
+
+  window.addEventListener("load", async () => {
+    document
+      .querySelectorAll("div.language-mermaid, pre.mermaid, pre > code.language-mermaid")
+      .forEach((el) => {
+        const block = el.closest("div.language-mermaid") || el.closest("pre") || el;
+        const code = block.querySelector("code") || block;
+        const graph = document.createElement("div");
+        graph.className = "mermaid";
+        graph.textContent = code.textContent.replace(/\n+$/, "");
+        block.replaceWith(graph);
+      });
+
+    mermaid.initialize({ startOnLoad: false, securityLevel: "loose" });
+    await mermaid.run();
+  });
+</script>
