@@ -17,14 +17,14 @@
 ├── <a href="https://github.com/catalanpy5/platform-engineer-milestones/blob/master/README.md">README.md</a>                    # 포트폴리오 개요 (이 문서)
 │
 ├── <a href="https://github.com/catalanpy5/platform-engineer-milestones/tree/master/case-studies">case-studies/</a>                # 심층 사례 (#01~#05) — 문제·제약·대안·결과
-│   ├── <a href="https://github.com/catalanpy5/platform-engineer-milestones/blob/master/case-studies/01-gpu-platform-multitenancy.md">01-gpu-platform-multitenancy.md</a>
-│   ├── <a href="https://github.com/catalanpy5/platform-engineer-milestones/blob/master/case-studies/02-monolith-to-microservices-gke-istio.md">02-monolith-to-microservices-gke-istio.md</a>
-│   ├── <a href="https://github.com/catalanpy5/platform-engineer-milestones/blob/master/case-studies/03-observability-autoremediation.md">03-observability-autoremediation.md</a>
-│   ├── <a href="https://github.com/catalanpy5/platform-engineer-milestones/blob/master/case-studies/04-secure-cicd-delivery-platform.md">04-secure-cicd-delivery-platform.md</a>
-│   └── <a href="https://github.com/catalanpy5/platform-engineer-milestones/blob/master/case-studies/05-cloud-migration-cost-optimization.md">05-cloud-migration-cost-optimization.md</a>
+│   ├── <a href="https://github.com/catalanpy5/platform-engineer-milestones/case-studies/01-gpu-platform-multitenancy.html">01-gpu-platform-multitenancy.md</a>
+│   ├── <a href="https://github.com/catalanpy5/platform-engineer-milestones/case-studies/02-monolith-to-microservices-gke-istio.html">02-monolith-to-microservices-gke-istio.md</a>
+│   ├── <a href="https://github.com/catalanpy5/platform-engineer-milestones/case-studies/03-observability-autoremediation.html">03-observability-autoremediation.md</a>
+│   ├── <a href="https://github.com/catalanpy5/platform-engineer-milestones/case-studies/04-secure-cicd-delivery-platform.html">04-secure-cicd-delivery-platform.md</a>
+│   └── <a href="https://github.com/catalanpy5/platform-engineer-milestones/case-studies/05-cloud-migration-cost-optimization.html">05-cloud-migration-cost-optimization.md</a>
 │
 ├── <a href="https://github.com/catalanpy5/platform-engineer-milestones/tree/master/competency">competency/</a>
-│   └── <a href="https://github.com/catalanpy5/platform-engineer-milestones/blob/master/competency/matrix.md">matrix.md</a>                # 역량 매트릭스 + 정량 미니사례
+│   └── <a href="https://github.com/catalanpy5/platform-engineer-milestones/competency/matrix.html">matrix.md</a>                # 역량 매트릭스 + 정량 미니사례
 │
 ├── <a href="https://github.com/catalanpy5/platform-engineer-milestones/tree/master/architecture">architecture/</a>                # 대표 시스템 다이어그램 (draw.io)
 │   ├── <a href="https://github.com/catalanpy5/platform-engineer-milestones/blob/master/architecture/gke-istio-4.drawio.svg">gke-istio-4.svg</a>          # #02 GKE 마이크로서비스 + Istio 카나리
