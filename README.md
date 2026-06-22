@@ -6,7 +6,7 @@
 
 이 포트폴리오는 **설계 의사결정 · 아키텍처 · 정량 결과**로 역량을 증명하는 문서 모음입니다.
 
-> 📧 : [email](woojungwoo34@gmail.com) 🥇 : [credly](https://www.credly.com/users/jungwoo-woo/edit/badges/credly)
+> 📧 : [email](mailto:woojungwoo34@gmail.com) 🥇 : [credly](https://www.credly.com/users/jungwoo-woo/badges)
 
 ---
 
