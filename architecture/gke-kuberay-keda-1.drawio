@@ -1,0 +1,313 @@
+<mxfile host="65bd71144e">
+    <diagram name="GKE KubeRay + KEDA" id="gke-kuberay-keda">
+        <mxGraphModel dx="-382" dy="1963" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1500" pageHeight="980" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="2" value="Google Cloud Platform — Project (sanitized)" style="rounded=1;arcSize=1;absoluteArcSize=1;html=1;fillColor=none;strokeColor=#4284F3;fontColor=#4284F3;verticalAlign=top;align=left;spacingLeft=10;spacingTop=8;fontSize=12;dashed=1;dashPattern=8 4;" parent="1" vertex="1">
+                    <mxGeometry x="2001" y="-770" width="990" height="810" as="geometry"/>
+                </mxCell>
+                <mxCell id="171" value="GKE Cluster — KubeRay + KEDA · NAP/cluster-autoscaler [#05]" style="rounded=1;arcSize=1;absoluteArcSize=1;html=1;fillColor=#E8F0FE;strokeColor=#4284F3;fontColor=#3C4043;verticalAlign=top;align=left;spacingLeft=34;spacingTop=8;fontSize=12;" parent="1" vertex="1">
+                    <mxGeometry x="2304" y="-605" width="549" height="620" as="geometry"/>
+                </mxCell>
+                <mxCell id="172" value="" style="sketch=0;html=1;dashed=0;whiteSpace=wrap;fillColor=#4284F3;strokeColor=none;shape=mxgraph.gcp2.kubernetes_engine;part=1;" parent="171" vertex="1">
+                    <mxGeometry x="6.522772277227723" y="8.775" width="16.95920792079208" height="21.060000000000002" as="geometry"/>
+                </mxCell>
+                <mxCell id="199" value="CI/CD Pipeline — GitLab runner" style="rounded=1;arcSize=2;absoluteArcSize=1;html=1;fillColor=#E6F4EA;strokeColor=#34A853;fontColor=#188038;verticalAlign=top;align=left;spacingLeft=10;spacingTop=6;fontSize=11;" parent="1" vertex="1">
+                    <mxGeometry x="1661" y="-861" width="311" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="203" style="edgeStyle=orthogonalEdgeStyle;html=1;rounded=0;strokeColor=#5F6368;strokeWidth=1.5;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=classic;curved=0;" parent="1" source="8" target="22" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="1991" y="-497"/>
+                            <mxPoint x="1991" y="-690"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="231" value="https" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="203" vertex="1" connectable="0">
+                    <mxGeometry x="-0.8067" y="3" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="8" value="clients" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#5F6368;fontColor=#3C4043;align=left;spacingLeft=44;verticalAlign=middle;fontSize=11;" parent="1" vertex="1">
+                    <mxGeometry x="1759" y="-526" width="158" height="58" as="geometry"/>
+                </mxCell>
+                <mxCell id="9" value="" style="sketch=0;html=1;dashed=0;whiteSpace=wrap;fillColor=#5F6368;strokeColor=none;shape=mxgraph.gcp2.user;part=1;" parent="8" vertex="1">
+                    <mxGeometry x="9.294117647058824" y="17" width="22.305882352941175" height="24" as="geometry"/>
+                </mxCell>
+                <mxCell id="20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#5F6368;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=10;fontColor=#3C4043;labelBackgroundColor=default;endArrow=classic;" parent="1" source="22" target="68" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="21" value="&lt;div&gt;https&lt;/div&gt;(cold start 0.1 ~ 0.5s)" style="edgeLabel;html=1;align=center;verticalAlign=middle;points=[];rounded=0;strokeColor=#5F6368;fontFamily=Helvetica;fontSize=10;fontColor=#3C4043;labelBackgroundColor=default;" parent="20" connectable="0" vertex="1">
+                    <mxGeometry x="-0.2442" y="-2" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="22" value="HTTP(s) LB" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#4284F3;fontColor=#3C4043;align=left;spacingLeft=44;verticalAlign=middle;fontSize=11;" parent="1" vertex="1">
+                    <mxGeometry x="2143" y="-722" width="205" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="23" value="" style="sketch=0;html=1;dashed=0;whiteSpace=wrap;fillColor=#4284F3;strokeColor=none;shape=mxgraph.gcp2.cloud_load_balancing;part=1;" parent="22" vertex="1">
+                    <mxGeometry x="10" y="18" width="24" height="24" as="geometry"/>
+                </mxCell>
+                <mxCell id="67" value="" style="group" parent="1" connectable="0" vertex="1">
+                    <mxGeometry x="2501" y="-726" width="149" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="68" value="&lt;div&gt;App Engine&lt;/div&gt;&lt;div&gt;(frontend reactjs)&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#4284F3;fontColor=#3C4043;align=left;spacingLeft=44;verticalAlign=middle;fontSize=11;" parent="67" vertex="1">
+                    <mxGeometry width="149" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="69" value="" style="editableCssRules=.*;sketch=0;html=1;verticalAlign=middle;labelPosition=center;verticalLabelPosition=bottom;align=center;fontSize=12;fontColor=default;shape=image;aspect=fixed;imageAspect=0;image=data:image/svg+xml,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnY9Imh0dHBzOi8vdmVjdGEuaW8vbmFubyIgd2lkdGg9IjIwIiBoZWlnaHQ9IjE2LjAyMDAwMDQ1Nzc2MzY3MiIgZmlsbC1ydWxlPSJldmVub2RkIiB2aWV3Qm94PSI4Ljk0MDY5NjcxNjMwODU5NGUtOCAwIDIwIDE2LjAyMDAwMDQ1Nzc2MzY3MiI+JiN4YTsJPHN0eWxlIHR5cGU9InRleHQvY3NzIj4mI3hhOwkuc3Qwe2ZpbGw6IzQyODVmNDt9JiN4YTsJLnN0MXtmaWxsOiNhZWNiZmE7fSYjeGE7CS5zdDJ7ZmlsbDojNjY5ZGY2O30mI3hhOwk8L3N0eWxlPiYjeGE7CTxwYXRoIGNsYXNzPSJzdDAiIGQ9Ik0xMi4zIDcuMjZsLTEuMjIgMS4yMkExLjcxIDEuNzEgMCAwIDEgMTAgMTEuNDlhMS43NCAxLjc0IDAgMCAxLTEuMzMtLjY0bC0xLjIyIDEuMjJhMy40MyAzLjQzIDAgMCAwIDUuOTg0LTEuMzgxQTMuNDMgMy40MyAwIDAgMCAxMi4zIDcuMjZ6Ii8+JiN4YTsJPHBhdGggY2xhc3M9InN0MSIgZD0iTTEwIDMuNTJhNi4yNSA2LjI1IDAgMCAwIDAgMTIuNSA2LjI1IDYuMjUgMCAwIDAgMC0xMi41bTAgMTAuNzRhNC40NSA0LjQ1IDAgMCAxLTMuMTU3LTcuNTk3QTQuNDUgNC40NSAwIDAgMSAxNC40NCA5LjgyIDQuNDQgNC40NCAwIDAgMSAxMCAxNC4yNiIvPiYjeGE7CTxwYXRoIGNsYXNzPSJzdDIiIGQ9Ik0xOS42MiA5LjE2bC0yLjU2LS44MWE3LjEgNy4xIDAgMCAxIC4xNyAxLjUzIDcuNjIgNy42MiAwIDAgMS0uMDggMS4wOGgyLjQ3YS40NC40NCAwIDAgMCAuMzgtLjQydi0xYS40NC40NCAwIDAgMC0uMzgtLjQyTTEwIDIuNzhhNy40OCA3LjQ4IDAgMCAxIDEuNS4xNUwxMC41OC4zOGMtLjA3LS4yMi0uMjEtLjM4LS40Mi0uMzhoLS4zOGEuNDUuNDUgMCAwIDAtLjQyLjM4bC0uOCAyLjU0QTcuNjQgNy42NCAwIDAgMSAxMCAyLjc4bS03LjIzIDcuMWE3LjEgNy4xIDAgMCAxIC4xNy0xLjUzbC0yLjU2LjgxYS40NC40NCAwIDAgMC0uMzguNDJ2MWEuNDQuNDQgMCAwIDAgLjM4LjQyaDIuNDdhNy42MiA3LjYyIDAgMCAxLS4wOC0xLjA4Ii8+JiN4YTsJPHBhdGggY2xhc3M9InN0MSIgZD0iTTEwIDcuMjZhMi41IDIuNSAwIDEgMCAwIDUgMi41IDIuNSAwIDEgMCAwLTV6bTAgMy43NWExLjI1IDEuMjUgMCAxIDEgMC0yLjUgMS4yNSAxLjI1IDAgMCAxIDEuMjUgMS4yNUExLjI1IDEuMjUgMCAwIDEgMTAgMTEuMDJ6Ii8+JiN4YTs8L3N2Zz4=;dashed=0;fontFamily=Helvetica;fillColor=#4284F3;" parent="67" vertex="1">
+                    <mxGeometry x="3" y="18.59375" width="29.64" height="24" as="geometry"/>
+                </mxCell>
+                <mxCell id="70" value="" style="group" parent="1" connectable="0" vertex="1">
+                    <mxGeometry x="2831" y="-726" width="148" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="71" value="Cloud Run&lt;br&gt;(backend nestjs)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#4284F3;fontColor=#3C4043;align=left;spacingLeft=44;verticalAlign=middle;fontSize=11;" parent="70" vertex="1">
+                    <mxGeometry width="148" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="72" value="" style="editableCssRules=.*;html=1;shape=image;verticalLabelPosition=bottom;verticalAlign=middle;aspect=fixed;imageAspect=0;image=data:image/svg+xml,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnY9Imh0dHBzOi8vdmVjdGEuaW8vbmFubyIgd2lkdGg9IjM2NS40NjQ5OTY3NzA0MjQ5MyIgaGVpZ2h0PSIzNzkuMjIyOTk0NDYzNTc3OTUiIHZpZXdCb3g9IjAgMCA5Ni42OTU5OTkxNDU1MDc4MSAxMDAuMzM1OTk4NTM1MTU2MjUiPiYjeGE7PHN0eWxlIHR5cGU9InRleHQvY3NzIj4mI3hhOwkuc3Qwe2ZpbGw6IzQyODVmNDt9JiN4YTsJLnN0MXtmaWxsOiNhZWNiZmE7fSYjeGE7PC9zdHlsZT4mI3hhOwk8cGF0aCBjbGFzcz0ic3QwIiBkPSJNMjkuNzk0IDEwMC4zMzZMNDYuOTIgNTAuMTY4aDQ5Ljc3NnpNMCA5OS42NzFsMTIuOTc2LTQ5LjUwMkgyOS4yMkwxNi44OTcgOTIuMDU0eiIvPiYjeGE7CTxwYXRoIGNsYXNzPSJzdDEiIGQ9Ik0yOS43OTQgMEw0Ni45MiA1MC4xNjhoNDkuNzc2ek0wIC42NjZsMTIuOTc2IDQ5LjUwMkgyOS4yMkwxNi44OTcgOC4yODN6Ii8+JiN4YTs8L3N2Zz4=;dashed=0;sketch=0;align=center;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=#4284F3;" parent="70" vertex="1">
+                    <mxGeometry x="12.8" y="21.875" width="24" height="24" as="geometry"/>
+                </mxCell>
+                <mxCell id="78" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#5F6368;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=10;fontColor=#3C4043;labelBackgroundColor=default;endArrow=classic;" parent="1" source="68" target="71" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="79" value="&lt;div&gt;Business logic&lt;/div&gt;&lt;div&gt;REST API&lt;/div&gt;&lt;div&gt;(cold start 0.5 ~ 1s)&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;points=[];fontFamily=Helvetica;fontSize=10;fontColor=#3C4043;labelBackgroundColor=default;rounded=0;strokeColor=#5F6368;" parent="78" connectable="0" vertex="1">
+                    <mxGeometry x="-0.3181" y="1" relative="1" as="geometry">
+                        <mxPoint x="11" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="170" value="Pub/Sub&#xa;(jobs topic · jobs-sub)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#4284F3;fontColor=#3C4043;align=left;spacingLeft=44;verticalAlign=middle;fontSize=11;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="2043" y="-581" width="180" height="72" as="geometry"/>
+                </mxCell>
+                <mxCell id="250" value="" style="sketch=0;html=1;dashed=0;whiteSpace=wrap;fillColor=#4284F3;strokeColor=none;shape=mxgraph.gcp2.cloud_pubsub;part=1;" parent="170" vertex="1">
+                    <mxGeometry x="10" y="24" width="24" height="24" as="geometry"/>
+                </mxCell>
+                <mxCell id="173" value="KEDA Operator&#xa;(ScaledObject watch)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E0F2F1;strokeColor=#00897B;fontColor=#00695C;align=center;verticalAlign=middle;fontSize=11;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="2414" y="-567" width="122" height="64" as="geometry"/>
+                </mxCell>
+                <mxCell id="174" value="ScaledObject: batch-worker&#xa;&#xa;· trigger: gcp-pubsub&#xa;  (SubscriptionSize)&#xa;· value: 10 msgs / worker&#xa;· minReplica 0 / maxReplica 50" style="shape=note;whiteSpace=wrap;html=1;fillColor=#E0F2F1;strokeColor=#00897B;fontColor=#00695C;align=left;spacingLeft=8;verticalAlign=top;spacingTop=6;fontSize=10;size=14;" parent="1" vertex="1">
+                    <mxGeometry x="2341" y="-477" width="235" height="125" as="geometry"/>
+                </mxCell>
+                <mxCell id="175" value="batch-worker Deployment (0↔N)&#xa;Ray job submitter · 경량(low-resource)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#326CE5;fontColor=#3C4043;align=left;spacingLeft=40;verticalAlign=middle;fontSize=11;" parent="1" vertex="1">
+                    <mxGeometry x="2620" y="-567" width="210" height="72" as="geometry"/>
+                </mxCell>
+                <mxCell id="176" value="" style="html=1;dashed=0;whiteSpace=wrap;fillColor=#326CE5;strokeColor=#ffffff;points=[[0.005,0.63,0],[0.1,0.2,0],[0.9,0.2,0],[0.5,0,0],[0.995,0.63,0],[0.72,0.99,0],[0.5,1,0],[0.28,0.99,0]];shape=mxgraph.kubernetes.icon;prIcon=deploy;part=1;" parent="175" vertex="1">
+                    <mxGeometry x="6" y="22" width="28" height="28" as="geometry"/>
+                </mxCell>
+                <mxCell id="177" value="KubeRay Cluster (Ray) — 단일 pod 메모리 한계 돌파 (45k→80k dim · ≈3,600s)" style="rounded=1;arcSize=2;absoluteArcSize=1;html=1;fillColor=#F3E5F5;strokeColor=#5E35B1;fontColor=#4527A0;verticalAlign=top;align=left;spacingLeft=10;spacingTop=6;fontSize=11;fontStyle=1;dashed=1;dashPattern=4 4;" parent="1" vertex="1">
+                    <mxGeometry x="2341" y="-330" width="495" height="320" as="geometry"/>
+                </mxCell>
+                <mxCell id="178" value="Ray head&#xa;(GCS · scheduler)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EDE7F6;strokeColor=#5E35B1;fontColor=#4527A0;align=center;verticalAlign=middle;fontSize=11;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="2491" y="-308" width="200" height="48" as="geometry"/>
+                </mxCell>
+                <mxCell id="179" value="Node — tenant A&#xa;(anti-affinity)" style="rounded=1;arcSize=2;absoluteArcSize=1;html=1;fillColor=#FAFAFA;strokeColor=#9E9E9E;fontColor=#5F6368;verticalAlign=top;align=center;spacingTop=6;fontSize=10;dashed=1;dashPattern=6 4;" parent="1" vertex="1">
+                    <mxGeometry x="2356" y="-222" width="150" height="185" as="geometry"/>
+                </mxCell>
+                <mxCell id="180" value="Ray worker pod" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#7E57C2;fontColor=#4527A0;align=center;verticalAlign=bottom;spacingBottom=4;fontSize=10;" parent="1" vertex="1">
+                    <mxGeometry x="2376" y="-165" width="110" height="115" as="geometry"/>
+                </mxCell>
+                <mxCell id="181" value="" style="html=1;dashed=0;whiteSpace=wrap;fillColor=#7E57C2;strokeColor=#ffffff;points=[[0.005,0.63,0],[0.1,0.2,0],[0.9,0.2,0],[0.5,0,0],[0.995,0.63,0],[0.72,0.99,0],[0.5,1,0],[0.28,0.99,0]];shape=mxgraph.kubernetes.icon;prIcon=pod;part=1;" parent="180" vertex="1">
+                    <mxGeometry x="38" y="22" width="34" height="34" as="geometry"/>
+                </mxCell>
+                <mxCell id="182" value="Node — tenant B&#xa;(anti-affinity)" style="rounded=1;arcSize=2;absoluteArcSize=1;html=1;fillColor=#FAFAFA;strokeColor=#9E9E9E;fontColor=#5F6368;verticalAlign=top;align=center;spacingTop=6;fontSize=10;dashed=1;dashPattern=6 4;" parent="1" vertex="1">
+                    <mxGeometry x="2516" y="-222" width="150" height="185" as="geometry"/>
+                </mxCell>
+                <mxCell id="183" value="Ray worker pod" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#7E57C2;fontColor=#4527A0;align=center;verticalAlign=bottom;spacingBottom=4;fontSize=10;" parent="1" vertex="1">
+                    <mxGeometry x="2536" y="-165" width="110" height="115" as="geometry"/>
+                </mxCell>
+                <mxCell id="184" value="" style="html=1;dashed=0;whiteSpace=wrap;fillColor=#7E57C2;strokeColor=#ffffff;points=[[0.005,0.63,0],[0.1,0.2,0],[0.9,0.2,0],[0.5,0,0],[0.995,0.63,0],[0.72,0.99,0],[0.5,1,0],[0.28,0.99,0]];shape=mxgraph.kubernetes.icon;prIcon=pod;part=1;" parent="183" vertex="1">
+                    <mxGeometry x="38" y="22" width="34" height="34" as="geometry"/>
+                </mxCell>
+                <mxCell id="185" value="Node — tenant C&#xa;(anti-affinity)" style="rounded=1;arcSize=2;absoluteArcSize=1;html=1;fillColor=#FAFAFA;strokeColor=#9E9E9E;fontColor=#5F6368;verticalAlign=top;align=center;spacingTop=6;fontSize=10;dashed=1;dashPattern=6 4;" parent="1" vertex="1">
+                    <mxGeometry x="2676" y="-222" width="150" height="185" as="geometry"/>
+                </mxCell>
+                <mxCell id="186" value="Ray worker pod" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#7E57C2;fontColor=#4527A0;align=center;verticalAlign=bottom;spacingBottom=4;fontSize=10;" parent="1" vertex="1">
+                    <mxGeometry x="2696" y="-165" width="110" height="115" as="geometry"/>
+                </mxCell>
+                <mxCell id="187" value="" style="html=1;dashed=0;whiteSpace=wrap;fillColor=#7E57C2;strokeColor=#ffffff;points=[[0.005,0.63,0],[0.1,0.2,0],[0.9,0.2,0],[0.5,0,0],[0.995,0.63,0],[0.72,0.99,0],[0.5,1,0],[0.28,0.99,0]];shape=mxgraph.kubernetes.icon;prIcon=pod;part=1;" parent="186" vertex="1">
+                    <mxGeometry x="38" y="22" width="34" height="34" as="geometry"/>
+                </mxCell>
+                <mxCell id="188" value="queue length (SubscriptionSize)" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=open;strokeColor=#00897B;fontColor=#00695C;fontSize=10;dashed=1;" parent="1" source="170" target="173" edge="1">
+                    <mxGeometry x="-0.0189" y="5" relative="1" as="geometry">
+                        <mxPoint x="2262" y="-545" as="sourcePoint"/>
+                        <Array as="points">
+                            <mxPoint x="2270" y="-535"/>
+                            <mxPoint x="2270" y="-535"/>
+                        </Array>
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="189" value="scale 0↔N" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;strokeColor=#00897B;fontColor=#00695C;fontSize=10;fontStyle=1;strokeWidth=2;" parent="1" source="173" target="175" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="190" value="pull jobs (jobs-sub)" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;strokeColor=#4284F3;fontColor=#1A56C4;fontSize=10;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" parent="1" source="175" target="170" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="2648" y="-567"/>
+                            <mxPoint x="2648" y="-620"/>
+                            <mxPoint x="2143" y="-620"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="191" value="submit job&#xa;(ray.init address=auto)" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;strokeColor=#5E35B1;fontColor=#4527A0;fontSize=10;" parent="1" source="175" target="178" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="192" value="schedule shards&#xa;(샤드 분산)" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;strokeColor=#7E57C2;fontColor=#4527A0;fontSize=9;" parent="1" source="178" target="180" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="193" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;strokeColor=#7E57C2;fontSize=9;" parent="1" source="178" target="183" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="194" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;strokeColor=#7E57C2;fontSize=9;" parent="1" source="178" target="186" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="196" value="Developers" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#9E9E9E;fontColor=#3C4043;align=left;spacingLeft=44;verticalAlign=middle;" parent="1" vertex="1">
+                    <mxGeometry x="1755" y="-659" width="160" height="54" as="geometry"/>
+                </mxCell>
+                <mxCell id="197" value="" style="sketch=0;html=1;dashed=0;whiteSpace=wrap;fillColor=#757575;strokeColor=none;shape=mxgraph.gcp2.user;part=1;" parent="196" vertex="1">
+                    <mxGeometry x="10" y="15" width="24" height="24" as="geometry"/>
+                </mxCell>
+                <mxCell id="198" value="Terraform (IaC)&#xa;전체 GCP / GKE 프로비저닝" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F3E9FB;strokeColor=#7B42BC;fontColor=#5E2E91;align=left;spacingLeft=14;verticalAlign=middle;fontSize=11;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="1731" y="-827" width="160" height="56" as="geometry"/>
+                </mxCell>
+                <mxCell id="202" value="provision (GCP + GKE)" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=open;strokeColor=#7B42BC;fontColor=#5E2E91;fontSize=10;dashed=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="198" target="2" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="3017.9700000000003" y="-904.07" as="targetPoint"/>
+                        <mxPoint x="1923.97" y="-799.07" as="sourcePoint"/>
+                        <Array as="points">
+                            <mxPoint x="2669" y="-799"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="204" value="legend" style="rounded=1;arcSize=2;absoluteArcSize=1;html=1;fillColor=#FFFFFF;strokeColor=#9E9E9E;fontColor=#5F6368;verticalAlign=top;align=left;spacingLeft=12;spacingTop=8;fontSize=12;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="1503" y="-722" width="240" height="358" as="geometry"/>
+                </mxCell>
+                <mxCell id="205" style="endArrow=classic;html=1;strokeColor=#5F6368;strokeWidth=1.5;" parent="1" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="1518" y="-682" as="sourcePoint"/>
+                        <mxPoint x="1558" y="-682" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="206" value="클라이언트 요청 (HTTPS)" style="text;html=1;align=left;verticalAlign=middle;fontSize=10;fontColor=#3C4043;" parent="1" vertex="1">
+                    <mxGeometry x="1566" y="-692" width="170" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="207" style="endArrow=classic;html=1;strokeColor=#4284F3;strokeWidth=2;" parent="1" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="1518" y="-656" as="sourcePoint"/>
+                        <mxPoint x="1558" y="-656" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="208" value="메시지/데이터 (enqueue·pull·SQL)" style="text;html=1;align=left;verticalAlign=middle;fontSize=10;fontColor=#3C4043;" parent="1" vertex="1">
+                    <mxGeometry x="1566" y="-666" width="180" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="209" style="endArrow=classic;html=1;strokeColor=#00897B;strokeWidth=2.5;" parent="1" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="1518" y="-630" as="sourcePoint"/>
+                        <mxPoint x="1558" y="-630" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="210" value="KEDA scale 0↔N" style="text;html=1;align=left;verticalAlign=middle;fontSize=10;fontColor=#3C4043;" parent="1" vertex="1">
+                    <mxGeometry x="1566" y="-640" width="170" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="211" style="endArrow=open;html=1;strokeColor=#00897B;strokeWidth=1.5;dashed=1;" parent="1" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="1518" y="-604" as="sourcePoint"/>
+                        <mxPoint x="1558" y="-604" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="212" value="KEDA 큐 길이 메트릭" style="text;html=1;align=left;verticalAlign=middle;fontSize=10;fontColor=#3C4043;" parent="1" vertex="1">
+                    <mxGeometry x="1566" y="-614" width="170" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="213" style="endArrow=classic;html=1;strokeColor=#5E35B1;strokeWidth=2;" parent="1" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="1518" y="-578" as="sourcePoint"/>
+                        <mxPoint x="1558" y="-578" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="214" value="Ray submit · shard 분산" style="text;html=1;align=left;verticalAlign=middle;fontSize=10;fontColor=#3C4043;" parent="1" vertex="1">
+                    <mxGeometry x="1566" y="-588" width="170" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="215" style="endArrow=open;html=1;strokeColor=#7B42BC;strokeWidth=1.5;dashed=1;" parent="1" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="1518" y="-552" as="sourcePoint"/>
+                        <mxPoint x="1558" y="-552" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="216" value="Terraform 프로비저닝" style="text;html=1;align=left;verticalAlign=middle;fontSize=10;fontColor=#3C4043;" parent="1" vertex="1">
+                    <mxGeometry x="1566" y="-562" width="170" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="217" value="" style="rounded=1;html=1;fillColor=none;strokeColor=#4284F3;dashed=1;dashPattern=8 4;" parent="1" vertex="1">
+                    <mxGeometry x="1518" y="-518" width="38" height="16" as="geometry"/>
+                </mxCell>
+                <mxCell id="218" value="GCP 경계" style="text;html=1;align=left;verticalAlign=middle;fontSize=10;fontColor=#3C4043;" parent="1" vertex="1">
+                    <mxGeometry x="1563" y="-518" width="170" height="16" as="geometry"/>
+                </mxCell>
+                <mxCell id="219" value="" style="rounded=1;html=1;fillColor=#E8F0FE;strokeColor=#4284F3;" parent="1" vertex="1">
+                    <mxGeometry x="1518" y="-492" width="38" height="16" as="geometry"/>
+                </mxCell>
+                <mxCell id="220" value="GKE Cluster" style="text;html=1;align=left;verticalAlign=middle;fontSize=10;fontColor=#3C4043;" parent="1" vertex="1">
+                    <mxGeometry x="1563" y="-492" width="170" height="16" as="geometry"/>
+                </mxCell>
+                <mxCell id="221" value="" style="rounded=1;html=1;fillColor=#EDE7F6;strokeColor=#5E35B1;" parent="1" vertex="1">
+                    <mxGeometry x="1518" y="-466" width="38" height="16" as="geometry"/>
+                </mxCell>
+                <mxCell id="222" value="KubeRay (Ray)" style="text;html=1;align=left;verticalAlign=middle;fontSize=10;fontColor=#3C4043;" parent="1" vertex="1">
+                    <mxGeometry x="1563" y="-466" width="170" height="16" as="geometry"/>
+                </mxCell>
+                <mxCell id="223" value="" style="rounded=1;html=1;fillColor=#FAFAFA;strokeColor=#9E9E9E;dashed=1;dashPattern=6 4;" parent="1" vertex="1">
+                    <mxGeometry x="1518" y="-440" width="38" height="16" as="geometry"/>
+                </mxCell>
+                <mxCell id="224" value="Ray worker pod 노드 격리 (anti-affinity)" style="text;html=1;align=left;verticalAlign=middle;fontSize=10;fontColor=#3C4043;" parent="1" vertex="1">
+                    <mxGeometry x="1563" y="-440" width="180" height="16" as="geometry"/>
+                </mxCell>
+                <mxCell id="225" value="※ sanitized 대표 시스템 — (After) 구성" style="text;html=1;align=left;verticalAlign=middle;fontSize=9;fontColor=#80868B;fontStyle=2;" parent="1" vertex="1">
+                    <mxGeometry x="1518" y="-404" width="220" height="18" as="geometry"/>
+                </mxCell>
+                <mxCell id="226" value="Before — 온프레미스 (단일 처리)&#xa;&#xa;&lt;span style=&quot;font-weight:normal;font-size:10px;&quot;&gt;· 단일 머신 순차 처리 ≈60,000s (≈16.7h)&lt;br&gt;· 그래프 45k dim 초과 시 OOM&lt;br&gt;· 2 노드 / 3 고객사 공유&lt;br&gt;&amp;nbsp;&amp;nbsp;→ 한 고객사 OOM이 타 고객사 동반 kill&lt;br&gt;· 상시 가동 → 유휴에도 비용 발생&lt;/span&gt;" style="rounded=1;arcSize=2;absoluteArcSize=1;html=1;fillColor=#F5F5F5;strokeColor=#9E9E9E;fontColor=#5F6368;verticalAlign=top;align=left;spacingLeft=12;spacingTop=8;fontSize=11;fontStyle=1;dashed=1;dashPattern=6 4;" parent="1" vertex="1">
+                    <mxGeometry x="1503" y="-340" width="265" height="200" as="geometry"/>
+                </mxCell>
+                <mxCell id="227" value="GKE + KubeRay 분산 + KEDA 이벤트 기반 오토스케일링 — 비용 최적화 아키텍처 (After) [#05]" style="text;html=1;fontSize=16;fontStyle=1;align=left;verticalAlign=middle;fontColor=#202124;" parent="1" vertex="1">
+                    <mxGeometry x="1501" y="-980" width="1420" height="28" as="geometry"/>
+                </mxCell>
+                <mxCell id="228" value="결과: 처리시간 ≈16× 단축(60,000s→3,600s) · 처리 규모 45k→80k dim(OOM 제거) · 동시 고객사 3→10 · 월 비용 700→350만(≈50%↓) · cross-tenant OOM 제거" style="text;html=1;fontSize=11;align=left;verticalAlign=middle;fontColor=#188038;" parent="1" vertex="1">
+                    <mxGeometry x="1501" y="-950" width="1420" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="229" style="edgeStyle=orthogonalEdgeStyle;html=1;rounded=0;strokeColor=#4284F3;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=10;fontColor=#1A56C4;labelBackgroundColor=default;endArrow=classic;" parent="1" source="71" target="170" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="2905" y="-640"/>
+                            <mxPoint x="2031" y="-640"/>
+                            <mxPoint x="2031" y="-545"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="230" value="enqueue job" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];rounded=0;strokeColor=#4284F3;fontFamily=Helvetica;fontSize=10;fontColor=#1A56C4;labelBackgroundColor=default;" parent="229" vertex="1" connectable="0">
+                    <mxGeometry x="0.648" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="232" style="edgeStyle=orthogonalEdgeStyle;html=1;rounded=1;dashed=1;strokeColor=#7B42BC;strokeWidth=1.5;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=open;" parent="1" source="196" target="198" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="1835" y="-769" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="1811" y="-689"/>
+                            <mxPoint x="1811" y="-689"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="233" value="&lt;span style=&quot;font-family: monospace; font-size: 0px; text-align: start; background-color: rgb(251, 251, 251);&quot;&gt;%3CmxGraphModel%3E%3Croot%3E%3CmxCell%20id%3D%220%22%2F%3E%3CmxCell%20id%3D%221%22%20parent%3D%220%22%2F%3E%3CmxCell%20id%3D%222%22%20value%3D%22exec%20terraform%20cli%20by%20bash%26lt%3Bdiv%26gt%3Bbackend%20%3A%20gitlab%26lt%3B%2Fdiv%26gt%3B%22%20style%3D%22edgeLabel%3Bhtml%3D1%3Balign%3Dcenter%3BverticalAlign%3Dmiddle%3Bresizable%3D0%3Bpoints%3D%5B%5D%3Brounded%3D0%3BstrokeColor%3D%235F6368%3BfontFamily%3DHelvetica%3BfontSize%3D10%3BfontColor%3D%233C4043%3BlabelBackgroundColor%3Ddefault%3BfontStyle%3D0%3BfillColor%3Dnone%3BgradientColor%3Dnone%3B%22%20vertex%3D%221%22%20connectable%3D%220%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%22-971.982817311097%22%20y%3D%22-642.8962667283913%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3C%2Froot%3E%3C%2FmxGraphModel%3E&lt;/span&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];rounded=1;dashed=1;strokeColor=#7B42BC;strokeWidth=1.5;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;" parent="232" vertex="1" connectable="0">
+                    <mxGeometry x="0.1832" y="-2" relative="1" as="geometry">
+                        <mxPoint y="-1" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="235" value="&lt;span style=&quot;color: rgb(60, 64, 67); font-size: 10px;&quot;&gt;exec terraform cli by bash&lt;/span&gt;&lt;div style=&quot;color: rgb(63, 63, 63); scrollbar-color: rgb(226, 226, 226) rgb(251, 251, 251); font-size: 10px;&quot;&gt;backend : gitlab&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];rounded=1;dashed=1;strokeColor=#7B42BC;strokeWidth=1.5;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;" parent="232" vertex="1" connectable="0">
+                    <mxGeometry x="0.1499" y="1" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="251" value="↳ Ray worker pod anti-affinity (고객사별 노드 격리) → 대규모 연산 cross-tenant OOM 방지" style="text;html=1;align=left;verticalAlign=middle;fontSize=9;fontColor=#4527A0;fontStyle=2;" parent="1" vertex="1">
+                    <mxGeometry x="2356" y="-252" width="470" height="18" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

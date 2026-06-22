@@ -1,0 +1,13 @@
+project_id          = "your-gcp-project-id"
+region              = "asia-northeast3"
+zone                = "asia-northeast3-a"
+app_engine_location = "asia-northeast3"
+name_prefix         = "ms"
+
+# Tighten control-plane access in real environments.
+# master_authorized_networks = [
+#   { cidr_block = "203.0.113.0/24", display_name = "office" },
+# ]
+
+# Set false only in throwaway sandboxes.
+deletion_protection = true
